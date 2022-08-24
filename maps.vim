@@ -17,6 +17,7 @@ nnoremap <silent> tp :tabp<CR>
 
 " Buffer manipulation
 nnoremap <silent> zz :bd<CR>
+nnoremap <silent> zn :bn<CR>
 
 " nvim tree toggle
 nnoremap <silent> fe :NvimTreeToggle<CR>
@@ -72,6 +73,3 @@ nmap        s   <Plug>(vsnip-select-text)
 xmap        s   <Plug>(vsnip-select-text)
 nmap        S   <Plug>(vsnip-cut-text)
 xmap        S   <Plug>(vsnip-cut-text)
-
-" Open markdown preview
-noremap <silent> <C-m> :MarkdownPreview<CR>
