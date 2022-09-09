@@ -53,4 +53,8 @@ Plug 'rmehri01/onenord.nvim'
 Plug 'rockerBOO/boo-colorscheme-nvim'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
+" Solidity specifics
+Plug 'tomlion/vim-solidity'
+Plug 'tzachar/cmp-tabnine', {'do': './install.sh'}
+
 call plug#end()

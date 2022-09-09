@@ -13,6 +13,8 @@
 :lua require('_nvim_tree')
 " Load lsp settings 
 :lua require('lsp')
+" Load tabnine
+:lua require('_tabnine')
 
 " required for not having always the django filetype in flask projects
 au BufNewFile,BufRead *.html set filetype=html
