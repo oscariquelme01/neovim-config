@@ -28,6 +28,21 @@ Plug 'kyazdani42/nvim-tree.lua'
 " Syntax highlighting 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+" Completion
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+" For vsnip users.
+Plug 'hrsh7th/cmp-vsnip'
+
+" Snips
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'rafamadriz/friendly-snippets'
+
 call plug#end()
 
 let g:catppuccin_flavour = "frappe" " latte, frappe, macchiato, mocha
@@ -38,6 +53,7 @@ require("configs.nvim-tree")
 require("nvim-autopairs").setup()
 require("configs.lualine")
 require("configs.tree-sitter")
+require("configs.vim-cmp")
 EOF
 
 colorscheme catppuccin
