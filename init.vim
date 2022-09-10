@@ -1,12 +1,8 @@
 " ---------------------
-" -- BASIC SETTINGS --- 
-" ---------------------
-
-
-" ---------------------
 " ------ IMPORTS ------ 
 " ---------------------
 runtime ./maps.vim
+runtime ./settings.vim
 
 call plug#begin('~/.configure/nvim/plugged')
 " Themes
