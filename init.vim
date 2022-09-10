@@ -43,6 +43,11 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'rafamadriz/friendly-snippets'
 
+" Lsp support
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'ray-x/lsp_signature.nvim'
+
 call plug#end()
 
 let g:catppuccin_flavour = "frappe" " latte, frappe, macchiato, mocha
@@ -54,6 +59,7 @@ require("nvim-autopairs").setup()
 require("configs.lualine")
 require("configs.tree-sitter")
 require("configs.vim-cmp")
+require("configs.lsp")
 EOF
 
 colorscheme catppuccin
