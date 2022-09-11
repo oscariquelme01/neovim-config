@@ -45,8 +45,11 @@ Plug 'rafamadriz/friendly-snippets'
 
 " Lsp support
 Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
 Plug 'ray-x/lsp_signature.nvim'
+
+" Package manager
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
 
 call plug#end()
 
@@ -59,6 +62,7 @@ require("nvim-autopairs").setup()
 require("configs.lualine")
 require("configs.tree-sitter")
 require("configs.vim-cmp")
+require("configs.mason")
 require("configs.lsp")
 EOF
 
