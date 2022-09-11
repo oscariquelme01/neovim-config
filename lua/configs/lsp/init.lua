@@ -25,8 +25,9 @@ local global_opts = {
 
 -- All the configured servers
 local servers = {
-     sumneko_lua = {require("configs.lsp.servers.sumneko_lua")},
+     sumneko_lua = require("configs.lsp.servers.sumneko_lua"),
 }
+
 
 local lspconfig = require("lspconfig")
 
@@ -34,5 +35,5 @@ for server_name, _ in pairs(servers) do
     -- Combine global opts with the specific server options defined above
     local opts = vim.tbl_deep_extend("force", global_opts, servers[server_name] or {})
     lspconfig[server_name].setup(opts)
-end
 
+end
