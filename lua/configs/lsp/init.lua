@@ -1,5 +1,4 @@
 -- Require other modules
-require("configs.lsp.nvim-lsp-installer")
 require("configs.lsp.lsp-signature")
 require("configs.lsp.diagnostics").setup()
 
@@ -15,9 +14,6 @@ local function on_attach(_, bufnr)
 
     -- Configure key mappings
     require("configs.lsp.mappings").setup(bufnr)
-
-    -- probandooo
-    vim.api.nvim_command('autocmd CursorHold * lua vim.diagnostic.open_float({scope="line"})')
 end
 
 -- Default lsp opts for all servers
@@ -31,14 +27,23 @@ local global_opts = {
 -- All the configured servers
 local servers = {
     sumneko_lua = require("configs.lsp.servers.sumneko_lua"),
+    tailwindcss = {},
+    cssls = {},
+    html = {},
+    emmet_ls = {},
+    tsserver = {}
 }
-
 
 local lspconfig = require("lspconfig")
 
 for server_name, _ in pairs(servers) do
     -- Combine global opts with the specific server options defined above
-    local opts = vim.tbl_deep_extend("force", global_opts, servers[server_name] or {})
+    local combined_opts = vim.tbl_deep_extend("force", global_opts, servers[server_name] or {})
+
+    -- Make capabilities and combine them to the already combined options
+    local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+    local opts = vim.tbl_deep_extend("force", combined_opts, {capabilities = capabilities})
+
     lspconfig[server_name].setup(opts)
 
 end

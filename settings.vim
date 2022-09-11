@@ -23,3 +23,5 @@ filetype plugin on
 set ttyfast                 " Speed up scrolling in Vim
 set splitbelow splitright
 set signcolumn=yes          " Disable disruptive 'text-shifting' diagnostics
+
+au BufNewFile,BufRead *.html set filetype=html  " required for not having always the django filetype in flask projects
