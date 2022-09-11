@@ -31,7 +31,10 @@ local servers = {
     cssls = {},
     html = {},
     emmet_ls = {},
-    tsserver = {}
+    tsserver = {},
+    solidity_ls = {},
+    solidity = {},
+    solang = {}
 }
 
 local lspconfig = require("lspconfig")
