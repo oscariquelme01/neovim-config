@@ -22,3 +22,4 @@ set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set ttyfast                 " Speed up scrolling in Vim
 set splitbelow splitright
+set signcolumn=yes          " Disable disruptive 'text-shifting' diagnostics

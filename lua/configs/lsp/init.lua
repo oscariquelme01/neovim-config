@@ -1,5 +1,7 @@
--- Require lsp installer
+-- Require other modules
 require("configs.lsp.nvim-lsp-installer")
+require("configs.lsp.lsp-signature")
+require("configs.lsp.diagnostics").setup()
 
 -- Function to configure the mappings that will be called when a buffer attaches to a lsp server
 local function on_attach(_, bufnr)
@@ -13,6 +15,9 @@ local function on_attach(_, bufnr)
 
     -- Configure key mappings
     require("configs.lsp.mappings").setup(bufnr)
+
+    -- probandooo
+    vim.api.nvim_command('autocmd CursorHold * lua vim.diagnostic.open_float({scope="line"})')
 end
 
 -- Default lsp opts for all servers
@@ -25,7 +30,7 @@ local global_opts = {
 
 -- All the configured servers
 local servers = {
-     sumneko_lua = require("configs.lsp.servers.sumneko_lua"),
+    sumneko_lua = require("configs.lsp.servers.sumneko_lua"),
 }
 
 
