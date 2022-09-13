@@ -35,7 +35,8 @@ local servers = {
     solidity_ls = {},
     solidity = {},
     solang = {},
-    pylsp = {}
+    pylsp = {},
+    pyright = {}
 }
 
 local lspconfig = require("lspconfig")
