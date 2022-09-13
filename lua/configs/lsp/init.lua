@@ -34,7 +34,8 @@ local servers = {
     tsserver = {},
     solidity_ls = {},
     solidity = {},
-    solang = {}
+    solang = {},
+    pylsp = {}
 }
 
 local lspconfig = require("lspconfig")
