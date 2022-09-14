@@ -32,9 +32,8 @@ local servers = {
     html = {},
     emmet_ls = {},
     tsserver = {},
+    solc = {},
     solidity_ls = {},
-    solidity = {},
-    solang = {},
     pylsp = {},
     pyright = {}
 }
