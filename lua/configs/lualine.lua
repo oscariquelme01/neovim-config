@@ -37,7 +37,7 @@ require('lualine').setup {
     lualine_a = {},
     lualine_b = {},
     lualine_c = {{ 'tabs', mode = 2, }},
-    lualine_x = {{ 'buffers',
+    lualine_x = {{ 'windows',
       symbols = {
         modified = ' ●',      -- Text to show when the buffer is modified
         alternate_file = '', -- Text to show to identify the alternate file
