@@ -33,6 +33,7 @@ local servers = {
     emmet_ls = {},
     tsserver = {},
     -- solc = require("configs.lsp.servers.solc"),
+    eslint = {},
     solidity_ls = {},
     pylsp = {},
     pyright = {}
