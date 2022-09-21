@@ -34,9 +34,10 @@ local servers = {
     tsserver = {},
     -- solc = require("configs.lsp.servers.solc"),
     eslint = {},
-    solidity_ls = {},
+    solidity_ls = require("configs.lsp.servers.solidity_ls"),
     pylsp = {},
-    pyright = {}
+    pyright = {},
+    jsonls = {}
 }
 
 local lspconfig = require("lspconfig")
