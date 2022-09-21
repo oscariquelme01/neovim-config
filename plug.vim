@@ -45,4 +45,7 @@ Plug 'ray-x/lsp_signature.nvim'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 
+" Language specifics
+Plug 'untitled-ai/jupyter_ascending.vim'
+
 call plug#end()
