@@ -28,3 +28,7 @@ au BufNewFile,BufRead *.html set filetype=html  " required for not having always
 
 " catppuccin theme
 let g:catppuccin_flavour = "frappe" " latte, frappe, macchiato, mocha
+
+" config vimwiki with markdown syntax
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+

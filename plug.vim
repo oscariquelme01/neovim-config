@@ -1,4 +1,5 @@
 call plug#begin('~/.configure/nvim/plugged')
+
 " Themes
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
@@ -7,6 +8,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'lilydjwg/colorizer' 
 Plug 'windwp/nvim-autopairs'
+Plug 'vimwiki/vimwiki'
 
 " interface
 Plug 'nvim-lualine/lualine.nvim'
