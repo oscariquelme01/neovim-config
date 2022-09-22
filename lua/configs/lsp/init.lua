@@ -37,6 +37,7 @@ local servers = {
     solidity_ls = require("configs.lsp.servers.solidity_ls"),
     pylsp = {},
     pyright = {},
+    prosemd_lsp = {},
     jsonls = {}
 }
 
