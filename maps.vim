@@ -2,6 +2,9 @@
 " ---- KEYBINDINGS ---- 
 " ---------------------
 
+" Remap leader key
+let mapleader = " " " map leader to space
+
 " telescope basic bindings
 nnoremap ff <cmd>Telescope find_files<cr>
 nnoremap fg <cmd>Telescope live_grep<cr>
