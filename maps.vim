@@ -10,6 +10,7 @@ nnoremap ff <cmd>Telescope find_files<cr>
 nnoremap fg <cmd>Telescope live_grep<cr>
 nnoremap fb <cmd>Telescope buffers<cr>
 nnoremap fh <cmd>Telescope help_tags<cr>
+nnoremap fd <cmd>Telescope diagnostics<cr>
 
 " clear search query string
 nmap <silent> sc :let @/ = ""<CR>
