@@ -36,7 +36,7 @@ require('lualine').setup {
   tabline = {
     lualine_a = {},
     lualine_b = {},
-    lualine_c = {{ 'tabs', mode = 2, }},
+    lualine_c = {'tabs'},
     lualine_x = {{ 'windows',
       symbols = {
         modified = ' ●',      -- Text to show when the buffer is modified
